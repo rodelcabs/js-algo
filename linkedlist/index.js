@@ -77,14 +77,14 @@ class LinkedList {
       current = current.next;
     }
 
-    return;
+    return current;
   }
 
   getFirst(){
     if(this.head){
       console.log(this.data(this.head));
     }
-    return;
+    return this.head;
   }
   
   getLast(){
@@ -96,7 +96,7 @@ class LinkedList {
 
       console.log(this.data(current));
     }
-    return;
+    return current;
   }
 
   removeFirst(){
@@ -181,17 +181,23 @@ class LinkedList {
   }
 }
 
-const linkedList = new LinkedList();
-linkedList.insertFirst(100);
-linkedList.insertFirst(200);
-linkedList.insertFirst(300);
-linkedList.insertLast(400);
-linkedList.insertAt(2, 500);
+// const linkedList = new LinkedList();
+// linkedList.insertFirst(100);
+// linkedList.insertFirst(200);
+// linkedList.insertFirst(300);
+// linkedList.insertLast(400);
+// linkedList.insertAt(2, 500);
 // linkedList.getAt(2);
 // linkedList.removeAt(2);
 // linkedList.getFirst();
 // linkedList.getLast();
 // linkedList.removeFirst();
 // linkedList.removeLast();
-linkedList.reverse();
+// linkedList.reverse();
 // linkedList.print();
+
+module.exports = {
+  LinkedList,
+  Node
+}
+
