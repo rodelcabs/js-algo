@@ -1,5 +1,6 @@
 const { LinkedList, Node } = require("../linkedlist/index");
 
+// LIFO (last in first out)
 class Stack {
   constructor(){
     // use linked list as data set
@@ -17,7 +18,7 @@ class Stack {
   }
 
   print(){
-    his.data.print();
+    this.data.print();
   }
 }
 
